@@ -1,0 +1,42 @@
+pi@raspberrypi:~/Desktop/ラズパイソースファイル/test_OK $ python pikkoRobo_20161113.py 
+画像キャプチャ
+ボールのx座標を取得
+ball_x: 940
+iamge_x: 1280
+beforeFrameOperate: -1
+currentFrameOperate: 0
+右旋回命令 → ロボット
+Traceback (most recent call last):
+  File "pikkoRobo_20161113.py", line 145, in <module>
+    oSerial.write("h1") #ロボットを初期ポジションにする
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 489, in write
+    raise SerialException('write failed: %s' % (v,))
+serial.serialutil.SerialException: write failed: [Errno 5] Input/output error
+pi@raspberrypi:~/Desktop/ラズパイソースファイル/test_OK $ python pikkoRobo_20161113.py 
+Traceback (most recent call last):
+  File "pikkoRobo_20161113.py", line 87, in <module>
+    oSerial = serial.Serial('/dev/ttyACM0', 9600)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 261, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 278, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+serial.serialutil.SerialException: could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+pi@raspberrypi:~/Desktop/ラズパイソースファイル/test_OK $ python pikkoRobo_20161113.py 
+Traceback (most recent call last):
+  File "pikkoRobo_20161113.py", line 87, in <module>
+    oSerial = serial.Serial('/dev/ttyACM0', 9600)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 261, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 278, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+serial.serialutil.SerialException: could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+pi@raspberrypi:~/Desktop/ラズパイソースファイル/test_OK $ python pikkoRobo_20161113.py 
+Traceback (most recent call last):
+  File "pikkoRobo_20161113.py", line 87, in <module>
+    oSerial = serial.Serial('/dev/ttyACM0', 9600)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 261, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 278, in open
+    raise SerialException("could not open port %s: %s" % (self._port, msg))
+serial.serialutil.SerialException: could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+pi@raspberrypi:~/Desktop/ラズパイソースファイル/test_OK $
